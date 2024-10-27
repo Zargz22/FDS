@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyQuest</title>
+    <link rel="stylesheet" href="custom.css">
+</head>
+<body>
+    <div class="container">
+        <div class="top-rectangle">
+            <h1>StudyQuest</h1>
+            <p>Para quem encara os estudos como uma aventura</p>
+        </div>
+
+        <!-- Seção Meus Planos -->
+        <h2 onclick="toggleSection('meusPlanos', this)">Meus planos <span class="arrow">▼</span></h2>
+        <div id="meusPlanos" class="plans">
+            <div class="plan">
+                <img src="imagem.jpg" alt="Imagem do plano">
+                <p>Nome do plano</p>
+                <p>x visualizaram</p>
+                <p>y favoritaram</p>
+                <p>★★★★★</p>
+            </div>
+            <div class="plan">
+                <img src="imagem.jpg" alt="Imagem do plano">
+                <p>Nome do plano</p>
+                <p>x visualizaram</p>
+                <p>y favoritaram</p>
+                <p>★★★★★</p>
+            </div>
+        </div>
+
+        <!-- Seção Planos Favoritos -->
+        <h2 onclick="toggleSection('planosFavoritos', this)">Planos favoritos <span class="arrow">▼</span></h2>
+        <div id="planosFavoritos" class="plans">
+            <div class="plan">
+                <img src="imagem.jpg" alt="Imagem do plano">
+                <p>Nome do plano</p>
+                <p>x visualizaram</p>
+                <p>y favoritaram</p>
+                <p>★★★★★</p>
+            </div>
+            <div class="plan">
+                <img src="imagem.jpg" alt="Imagem do plano">
+                <p>Nome do plano</p>
+                <p>x visualizaram</p>
+                <p>y favoritaram</p>
+                <p>★★★★★</p>
+            </div>
+        </div>
+
+        <!-- Seção Planos Compartilhados -->
+        <h2 onclick="toggleSection('planosCompartilhados', this)">Planos compartilhados <span class="arrow">▼</span></h2>
+        <div id="planosCompartilhados" class="plans">
+            <div class="plan">
+                <img src="imagem.jpg" alt="Imagem do plano">
+                <p>Nome do plano</p>
+                <p>x visualizaram</p>
+                <p>y favoritaram</p>
+                <p>★★★★★</p>
+            </div>
+            <div class="plan">
+                <img src="imagem.jpg" alt="Imagem do plano">
+                <p>Nome do plano</p>
+                <p>x visualizaram</p>
+                <p>y favoritaram</p>
+                <p>★★★★★</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Contatos</p>
+        <div class="footer-icons">
+            <div>StudyQuest</div>
+            <div>Email</div>
+            <div>Instagram</div>
+            <div>Facebook</div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
