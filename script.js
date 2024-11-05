@@ -3,10 +3,13 @@ function toggleSection(id, header) {
   const arrow = header.querySelector('.arrow');
 
   // Abilitar a visibilidade das abas
-  section.style.display = section.style.display === 'none' ? 'block' : 'none';
-
-  // Para rotacionar a seta
-  arrow.classList.toggle('rotated');
+  if (section.style.display === 'none' || section.style.display === ''){
+    section.style.display = 'block';
+    arrow.classList.remove('rotated');
+  }else{
+    section.style.display = 'none';
+    arrow.classList.add('rotated');
+  }
 }
 
 // Inicializa a visibilidade das abas
